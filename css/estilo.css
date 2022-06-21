@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    background-color: #f1e9e6 ;
+}
+
+/*--parte-izquierda--*/
+
+.imagen{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/beach.jpg);
+    background-size: cover;
+    background-position: 0;
+    overflow: hidden;
+
+}
+
+/*--parte-derecha--*/
+
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+.user {
+    font-size: 7rem;
+    margin-bottom:2rem;
+    color:   #58cbe2 ;
+    
+}
+
+
+
+
+.titulo{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+   font-weight: 600;
+    color: #e45c39 ;
+    letter-spacing: 0.1rem;
+    
+}
+
+
+
+label{
+    color:#127184 ;
+    
+}
+
+#contraseña{
+    width: 20rem;
+    height: 2rem ;
+    border: solid 0.7px #c4c8c9 ;
+    border-radius:0.3rem ;
+}
+
+#contraseña:hover{
+    border:solid 0.5px  #127184  ;
+    
+}
+
+#email{
+    width: 20rem;
+    height: 2rem ; 
+    border: solid 0.7px #c4c8c9 ;
+    
+    border-radius:0.3rem ;  
+}
+
+#email:hover{
+    border:solid 0.5px  #127184 ;
+    
+    
+}
+
+#elnombre{
+    width: 20rem;
+    height: 2rem ;
+    border: solid 0.5px #c4c8c9 ;
+    
+
+    
+}
+
+#elnombre:hover{
+    border:solid 0.5px  #127184  ;
+}
+
+::placeholder{
+    color: #e45c39;
+}
+
+#boton{
+    background-color:    #e45c39  ;
+    border: none;
+    color: rgb(244, 251, 253);
+    font-weight:600;
+    font-size: 0.9rem;
+    padding: 1rem 8rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    letter-spacing:0.1rem ;
+    cursor: pointer;
+    transition: background 0.2s ease-in,
+                transform .2s ease-in-out;
+}
+
+#boton:hover{
+    background-color:  #e7591c ;
+    transform: scale(1.01);
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+#checkbox{
+    cursor: pointer;
+    
+    
+}
+
+/*--medias--*/
+
+
+@media (max-width: 770px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .imagen{
+        height: 40vh;  
+    }
+
+    .formulario{
+        height: 60vh; 
+    }
+
+    .user{
+        font-size: 3.2rem;
+    }
+}
+
+@media(max-width: 450px){
+    .imagen{
+        height: 30vh;
+    }
+
+    .formulario{  
+        height: 70vh; 
+        
+    }
+
+    .user{
+        font-size: 2rem;  
+        margin-bottom: 0.8rem; 
+    }
+
+    .titulo{
+        font-size: 1rem;
+}
+
+/*--botones y casillas--*/
+    
+#contraseña , #email , #elnombre{
+    width: 15rem;
+    height: 1.3rem ;
+}
+   label {
+    font-size: 0.8rem;
+   }
+   .check{
+    font-size: 0.6rem;
+
+   }
+   #boton {
+    font-size: 0.8rem;
+    padding: 0.7rem 5rem;
+   }
+}
